@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="height=device-height, 
+  width=device-width, initial-scale=1.0, 
+  minimum-scale=1.0, maximum-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Bookmark landing page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <header>
+    <a href="#home" aria-label="homepage" class="logo"><img src="images/logo-bookmark.svg" alt="headerbookmark_logo"></a>
+    <input type="checkbox" name="toggle_nav" id="toggle_nav">
+    <label for="toggle_nav"><img src="images/icon-hamburger.svg" alt="toggle_nav_btn"></label>
+    <nav>
+      <ul>
+        <hr>
+        <li>
+          <a href="#features"><span>Features</span></a>
+        </li>
+        <hr>
+        <li>
+          <a href="#pricing"><span>Pricing</span></a>
+        </li>
+        <hr>
+        <li>
+          <a href="#Contact"><span>Contact</span></a>
+        </li>
+        <hr>
+        <li>
+          <a href="#Login" class="login_link"><span>Login</span></a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="hero">
+      <div class="hero_header">
+        <h1>A Simple Bookmark Manager</h1>
+        <p>A clean and simple interface to organize your favourite websites. Open a new 
+          browser tab and see your sites load instantly. Try it for free.</p>
+        <ul>
+          <li>
+            <a href="#forchrome"><span>Get it on Chrome</span></a>
+          </li>
+          <li>
+            <a href="#forfirefox"><span>Get it on Firefox</span></a>
+          </li>
+        </ul>
+      </div>
+      <div class="hero_illustration">
+        <div></div>
+        <img src="images/illustration-hero.svg" alt="hero illustration">
+      </div>
+    </section>
+    <section id="features">
+      <div class="features_header">
+        <h2>Features</h2>
+        <p>Our aim is to make it quick and easy for you to access your favourite websites. 
+          Your bookmarks sync between your devices so you can access them on the go.</p>
+      </div>
+      <div class="features_tabs">
+        <form class="tab_buttons" name="tab_buttons">
+          <i></i>
+          <hr>
+          <input type="radio" name="tab" id="tab1" value="0">
+          <label for="tab1"><span>Simple Bookmarking</span></label>
+          <hr>
+          <input type="radio" name="tab" id="tab2" value="1">
+          <label for="tab2"><span>Speedy Searching</span></label>
+          <hr>
+          <input type="radio" name="tab" id="tab3" value="2">
+          <label for="tab3"><span>Easy Sharing</span></label>
+          <hr>
+        </form>
+        <div class="tab">
+          <div class="tab_illustration">
+            <div class="illustration0">
+              <img src="images/illustration-features-tab-1.svg" alt="Bookmark in one click illustration">
+              <img src="images/illustration-features-tab-2.svg" alt="Intelligent serach illustration">
+              <img src="images/illustration-features-tab-3.svg" alt="Share your bookmarks illustration">
+            </div>
+            <div class="back_bar"></div>
+            <!-- <div class="illustration1">
+              <img src="images/illustration-features-tab-2.svg" alt="Intelligent serach illustration">
+            </div>
+            <div class="illustration2">
+              <img src="images/illustration-features-tab-3.svg" alt="Share your bookmarks illustration">
+            </div> -->
+          </div>
+          <div class="tab_header">
+            <div class="header0">
+              <h2>Bookmark in one click</h2>
+              <p>Organize your bookmarks however you like. Our simple drag-and-drop interface 
+                gives you complete control over how you manage your favourite sites.</p>
+              <a href="#moreinfo"><span>More Info</span></a>
+            </div>
+            <div class="header1">
+              <h2>Intelligient search</h2>
+              <p>Our powerful search feature will help you find saved sites in no time at all. 
+                No need to trawl through all of your bookmarks.</p>
+              <a href="#moreinfo"><span>More Info</span></a>
+            </div>
+            <div class="header2">
+              <h2>Share your bookmarks</h2>
+              <p>Easily share your bookmarks and collections with others. Create a shareable 
+                link that you can send at the click of a button.</p>
+              <a href="#moreinfo"><span>More Info</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="extentions">
+
+    </section>
+    <section id="faq">
+
+    </section>
+    <section id="contact">
+
+    </section>
+  </main>
+
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </p>
+  </footer>
+
+</body>
+<script src="index.js"></script>
+</html>

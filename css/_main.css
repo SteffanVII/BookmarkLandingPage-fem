@@ -1,0 +1,448 @@
+@import url("_properties.css");
+
+*,
+*::before,
+*::after
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: var(--font);
+
+    overflow-x: hidden;
+}
+
+header
+{
+    width: 100%;
+    height: 136px;
+
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    padding: 0 var(--paddinglr);
+
+    background-color: white;
+    z-index: 10;
+}
+
+main
+{
+    padding: 0 var(--paddinglr);
+}
+
+footer
+{
+    padding: 0 var(--paddinglr);
+}
+
+.logo
+{
+    height: 25px;
+}
+
+header nav ul hr
+{
+    display: none;
+}
+
+header nav ul li
+{
+    
+    display: inline-block;
+    
+}
+
+header nav ul li a
+{
+    width: 111px;
+    height: 40px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+
+    font-size: 0.8rem;
+    border-radius: 5px;
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+
+    transition: 0.3s ease;
+}
+
+header nav ul li a:hover
+{
+    color: var(--SoftRed);
+}
+
+.login_link
+{
+    margin: 0;
+
+    font-weight: 500;
+    color: white;
+    border: 2px solid var(--SoftRed);
+    background-color: var(--SoftRed);
+}
+
+.login_link:hover
+{
+    color: white;
+}
+
+.login_link:active
+{
+    color: var(--SoftRed);
+    background-color: white;
+
+    transition: none;
+}
+
+#toggle_nav, #toggle_nav + label
+{
+    display: none;
+}
+
+#hero
+{
+    padding-top: 46px;
+    display: grid;
+    grid-template-columns: 45% 55%;
+    grid-template-rows: 512px;
+    gap: 20px;
+}
+
+.hero_header
+{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.hero_header h1
+{
+    font-size: 2.6rem;
+    font-weight: 500;
+}
+
+.hero_header p
+{
+    margin: 27px 0;
+    
+    line-height: 1.5rem;
+    color: var(--GrayishBlue);
+    font-size: 0.95rem;
+}
+
+.hero_header li
+{
+    width: 166px;
+    height: 48px;
+
+    display: inline-block;
+}
+
+.hero_header li:last-child
+{
+    margin-left: 17px;
+}
+
+.hero_header a
+{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: 0 6px 6px rgba(128, 128, 128, 0.178);
+    text-decoration: none;
+    border-radius: 5px;
+    border: 2px solid var(--SoftBlue);
+    background-color: var(--SoftBlue);
+    color: white;
+    font-size: 0.8rem;
+
+    transition: 0.5s ease;
+}
+
+.hero_header a:active
+{
+    background-color: white;
+    color: var(--SoftBlue);
+    transition: none;
+}
+
+.hero_header ul li:last-child a
+{
+    border: 2px solid whitesmoke;
+    background-color: whitesmoke;
+    color: var(--VeryDarkBlue);
+}
+
+.hero_header ul li:last-child a:active
+{
+    border-color: var(--VeryDarkBlue);
+    background-color: white;
+}
+
+.hero_illustration
+{
+    position: relative;
+    display: flex;
+}
+
+.hero_illustration div
+{
+    width: 100%;
+    height: 352px;
+
+    position: absolute;
+    right: -35%;
+    bottom: 0;
+
+    border-radius: 176px 0 0 176px;
+    background-color: var(--SoftBlue);
+}
+
+.hero_illustration img
+{
+    position: absolute;
+    top: 30px;
+    right: -70px;
+}
+
+#features
+{
+    height: 811px;
+
+    padding-top: 90px;
+}
+
+.features_header h2
+{
+    text-align: center;
+}
+
+.features_header p
+{
+    max-width: 510px;
+    width: 100%;
+
+    margin: 37px auto 40px auto;
+
+    color: var(--GrayishBlue);
+    font-size: 0.95rem;
+    text-align: center;
+    line-height: 1.5rem;
+}
+
+.tab_buttons
+{
+    width: max-content;
+
+    position: relative;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    margin: 0 auto;
+
+    border-bottom: 1px solid rgb(224, 224, 224);
+}
+
+.tab_buttons i
+{
+    width: 228px;
+    height: 5px;
+
+    position: absolute;
+    left: var(--tabindicator);
+    bottom: -1px;
+    
+    background-color: var(--SoftRed);
+    
+    transition: 0.5s ease;
+}
+
+.tab_buttons hr
+{
+    display: none;
+
+    width: 100%;
+    height: 1px ;
+
+    border: none;
+    background-color: rgb(224, 224, 224);
+}
+
+.tab_buttons input
+{
+    display: none;
+    visibility: hidden;
+}
+
+.tab_buttons label
+{
+    width: 228px;
+    height: 80px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.tab
+{
+    height: fit-content;
+
+    margin-top: 72px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    /* grid-template-rows: 435px; */
+}
+
+.tab_header
+{
+    width: 100%;
+    height: 100%;
+
+    padding-left: 125px;
+    position: relative;
+    display: flex;
+}
+
+.tab_header div
+{
+    width: 100%;
+    height: fit-content;
+
+    transform: translateX(100%);
+    
+    visibility: hidden;
+    opacity: 0;
+}
+
+.tab_header div:nth-child(1), .tab_header div:nth-child(2)
+{
+    position: absolute;
+}
+
+.tab_header div.active
+{
+    animation: headerfadein 0.5s ease forwards;
+}
+
+@keyframes headerfadein {
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+        visibility: visible;
+    }
+}
+
+.tab_header h2
+{
+    margin-top: 60px;
+}
+
+.tab_header p
+{
+    max-width: 450px;
+
+    margin: 36px 0;
+
+    color: var(--GrayishBlue);
+    line-height: 1.5rem;
+}
+
+.tab_header a
+{
+    width: 114px ;
+    height: 48px ;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+    border: 2px solid var(--SoftBlue);
+    background-color: var(--SoftBlue);
+    border-radius: 5px;
+
+    transition: 0.5s ease;
+}
+
+.tab_header a:active
+{
+    background-color: white;
+    color: var(--SoftBlue);
+
+    transition: none;
+}
+
+.tab_illustration
+{
+    width: 100%;
+    height: min-content;
+
+    position: relative;
+    display: flex;
+    justify-content: right;
+}
+
+.tab_illustration img
+{
+    transform: translateX(-100%);
+    visibility: hidden;
+    opacity: 0;
+}
+
+.tab_illustration img:nth-child(2), .tab_illustration img:nth-child(3)
+{
+    right: 50%;
+    position: absolute;
+} 
+
+.tab_illustration img.active
+{
+    transition: 0.5s ease;
+    animation: fadein 0.5s ease 0s forwards;
+}
+
+@keyframes fadein {
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+        right: 0;
+        visibility: visible;
+    }
+}
+
+.back_bar
+{
+    width: 120%;
+    height: 352px;
+
+    position: absolute;
+    left: -35%;
+    bottom: -25%;
+
+    border-radius: 0 176px 176px 0;
+    background-color: var(--SoftBlue);
+
+    z-index: -1;
+}

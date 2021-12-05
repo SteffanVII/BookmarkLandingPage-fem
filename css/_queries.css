@@ -1,0 +1,333 @@
+@import url("_main.css");
+
+@media only screen and ( max-width: 1280px )
+{
+    #hero
+    {
+        display: flex;
+        flex-flow: row;
+        align-items: center;
+    }
+
+    .hero_header
+    {
+        width: 100%;
+        height: fit-content;
+
+        align-items: center;
+        text-align: center;
+
+        grid-row: 2;
+    }
+
+    .hero_header h1
+    {
+        font-size: 1.5rem;
+    }
+
+    .hero_header p
+    {
+        font-size: 0.8rem;
+    }
+
+    .hero_illustration
+    {
+        width: 100%;
+        height: min-content;
+    }
+
+    .hero_illustration img
+    {
+        width: 100%;
+
+        position: initial;
+        margin: 0 auto;
+    }
+
+    .hero_illustration div
+    {
+        width: 120%;
+        height: 80%;
+
+        z-index: -1;
+    }
+
+    .tab
+    {
+        display: flex;
+        flex-flow: row;
+        justify-content: center;
+        gap: 20px;
+
+        align-items: center;
+    }
+
+    .tab_illustration
+    {
+        height: min-content;
+
+        display: flex;
+        align-items: center;
+    }
+
+    .tab_illustration div
+    {
+        display: flex;
+    }
+
+    .tab_illustration img
+    {
+        width: 90%;
+
+        position: initial;
+        margin-left: auto;
+    }
+
+    .back_bar
+    {
+        height: 110%;
+
+        bottom: -40%;
+    }
+
+    .tab_header
+    {
+        height: fit-content;
+
+        padding-left: 5%;
+    }
+
+    .tab_header h2
+    {
+        margin: 0;
+    }
+}
+
+@media only screen and ( max-width: 990px )
+{
+    .logo.active
+    {
+        z-index: 2;
+    }
+
+    #toggle_nav + label
+    {
+        display: initial;
+    }
+
+    #toggle_nav + label.active
+    {
+        z-index: 2;
+        content: url("images/icon-close.svg");
+    }
+
+    header
+    {
+        height: 105px;
+    }
+
+    header nav
+    {
+        width: 100%;
+        height: 100vh;
+
+        position: absolute;
+        top: -100vh;
+        left: 0;
+        padding: 0 var(--paddinglr);
+        padding-top: 136px;
+
+        z-index: 1;
+        background-color: var(--VeryDarkBlueTransparent);
+    }
+    
+    header nav.untoggle
+    {
+        animation: toggle_out 0.5s ease forwards;
+    }
+
+    header nav.toggle
+    {
+        animation: toggle_in 0.5s ease forwards;
+    }
+
+    @keyframes toggle_out
+    {
+        0% {
+            top: 0;
+            opacity: 1;
+        }
+        
+        99% {
+            opacity: 0.01;
+        }
+        
+        100% {
+            top: 0;
+            opacity: 0;
+            visibility: hidden;
+        }
+    }
+
+    @keyframes toggle_in
+    {
+        0% {
+            top: 0;
+            visibility: visible;
+            opacity: 0;
+        }
+        
+        100% {
+            opacity: 1;
+            top: 0;
+        }
+    }
+
+    header nav ul hr
+    {
+        height: 1px;
+
+        display: block;
+
+        border: none;
+        background-color: var(--GrayishBlue);
+    }
+
+    header nav ul li
+    {
+        width: 100%;
+
+        display: initial;
+    }
+
+    header nav ul li a
+    {
+        width: 100%;
+        height: 60px;
+
+        color: white;
+
+        transition: none;
+    }
+
+    .login_link
+    {
+        border-color: white;
+        background-color: transparent;
+    }
+
+    .hero_header ul li
+    {
+        width: 151px;
+
+        margin: 0 7px;
+    }
+    
+    .hero_header ul li:last-child
+    {
+        margin: 0 7px;
+        margin-top: 20px;
+    }
+
+    .tab_buttons
+    {
+        width: 100%;
+
+        flex-flow: column;
+        align-items: center;
+        padding: 0;
+
+        border-bottom: none;
+    }
+
+    .tab_buttons label
+    {
+        width: 100%;
+        height: 58px;
+    }
+
+    .tab_buttons i
+    {
+        width: 50%;
+
+        left: initial;
+        top: var(--tabindicatormobile);
+
+        transition: none;
+    }
+
+    .tab_buttons hr
+    {
+        display: initial;
+    }
+}
+
+@media only screen and ( max-width: 540px )
+{
+    header
+    {
+        padding: 0 var(--paddinglrm);
+    }
+    
+    main, footer
+    {
+        padding: 0 var(--paddinglrm);
+    }
+
+    #hero
+    {
+        flex-flow: column-reverse;
+        padding-top: 35px;
+    }
+
+    .hero_header
+    {
+        margin-top: 56px;
+    }
+    
+    .features_header h2
+    {
+        font-size: 1.3rem;
+    }
+
+    .features_header p
+    {
+        font-size: 0.8rem;
+    }
+
+    .tab
+    {
+        flex-flow: column;
+        row-gap: 160px;
+    }
+
+    .tab_header
+    {
+        padding: 0;
+        /* margin-top: 100px; */
+
+        text-align: center;
+    }
+
+    .tab_header h2, .tab_header p
+    {
+        width: 100%;
+
+        font-size: 1.3rem;
+    }
+
+    .tab_header p
+    {
+        font-size: 0.8rem;
+    }
+
+    .tab_header a
+    {
+        margin: 0 auto;
+    }
+
+    .tab_illustration img:nth-child(1)
+    {
+        width: 100%;
+    }
+}
