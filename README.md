@@ -14,10 +14,10 @@ Users should be able to:
 ### Screenshot
 
 - Desktop
-![]("ss/127.0.0.1_5500_1440x1024.png")
+![](ss/127.0.0.1_5500_1440x1024.png)
 
 - Mobile
-![]("ss/127.0.0.1_5500_iPhone6_7_8.png")
+![](ss/127.0.0.1_5500_iPhone6_7_8.png)
 
 
 ### Links
