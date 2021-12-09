@@ -11,6 +11,7 @@ document.querySelector("#toggle_nav").addEventListener("change", () => {
         document.querySelector("header nav").classList.add("untoggle");
     }
     
+    document.querySelector('.header_social_links').classList.toggle('active');
     document.querySelector("#toggle_nav + label").classList.toggle("active");
     document.querySelector(".logo").classList.toggle("active");
 } );
@@ -23,6 +24,7 @@ window.addEventListener("resize", () => {
         document.querySelector("#toggle_nav").checked = false;
         document.querySelector("#toggle_nav + label").classList.remove("active");
         document.querySelector(".logo").classList.remove("active");
+        document.querySelector('.header_social_links').classList.remove('active');
         
         tabClick();
     }
@@ -30,6 +32,10 @@ window.addEventListener("resize", () => {
     {
         tabClick();
     }
+} );
+
+document.querySelector('.attribution_container').addEventListener('click', function() {
+    this.classList.toggle('active');
 } );
 
 // Tab selection movement
